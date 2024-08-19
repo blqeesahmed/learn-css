@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        perspective: 800px;
+        align-items: center;
+    }
+    section{position: relative;
+    outline: 1px solid red;
+    height: 360px;
+    width: 176px;
+    transform: rotatez(10deg) rotatex(60deg);
+    transform-style: preserve-3d ;
+    transition: 1s ease;
+    box-shadow: 4px 3px 5px rgba(0,0,0,1);
+}
+section:hover{
+    transform:rotate(0deg);
+    
+}
+div{
+    height: 360px;
+    width: 176px;
+    position: absolute;
+    top:0;
+    left:0;
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotatey(180deg);
+    
+}
+@keyframes rotation {from{transform:rotateY(0deg)}
+        to{transform:rotatey(180deg)}}
+</style>
+<body>
+    <section>
+        <div class="front"><img src="front.svg"></div>
+        <div class="back"><img src="back (2).svg"></div>
+    </section>
+</body>
+</html>

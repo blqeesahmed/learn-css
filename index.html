@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task7</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient( 280deg, #cc6666 15%,  #993366 40% , #333366 80%);
+}
+        .page1{
+            display:flex;
+            justify-content:space-between;
+            background-color: black;
+            }
+            .page1 .links ul{display: flex;}
+            .page1 .links ul li{margin: 20px;}
+            .page1 .links ul li a{color: white;
+             font-size: 30px;
+             font-weight: bold;}
+            .forms{
+    width: 100%;
+    height:75vh;}
+.forms form{
+    height: 60%;
+    width: 25%;
+    margin:  auto;
+    padding-top: 20px;
+    background-color: rgb(0, 0, 0 , 0.2) ;
+    border-bottom: 3px solid #908888;
+    border-top: 3px solid #908888;
+    margin-top: 10%;
+    position: relative;
+    
+}
+form img{ width: 130px;
+    position: absolute;
+    top: -100px;
+    left: calc(100% - 65%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+
+}
+.forms form input:not(:last-of-type){
+     display: block;
+     margin: 20px auto;
+     text-align: center;
+     padding: 10px;
+     margin-top: 20px;
+     width: 80%;
+     border-radius:80px ;
+     
+}
+.forms form input:first-of-type{
+    margin-top:90px;
+}
+.forms form label{
+    font-size:20px;
+    font-weight:lighter
+}
+    
+.font-end{
+    justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    color: #f8f2f2;
+    text-align: center;
+    font-size: 25px;
+    font-weight:bolder;
+    padding:20px}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="page1">
+        <h1 style="color:rgb(245, 235, 235);margin-top :20px;">
+            <span class="heart">❤</span> task 7_ login page</h1>
+        <div class="links">
+            <ul>
+                <li><a style="padding:15px; background:#f5e4e4;
+                color:#0f0a0a; border-radius: 6px;" href="">home</a></li>
+                <li><a href="Pricing">Pricing</a></li>
+                  <li> <a href="Services">Services</a></li>
+                  <li><a href="Countact us">Countact us</a></li>
+            </ul>
+        </div>
+       </div>
+       <div class="forms">
+        <form action="">
+            <img src="https://i.postimg.cc/y602PM8r/icon.jpg" alt="">
+            <input type="text" placeholder="USERNAME">
+            <input type="password" placeholder="PASSWORD">
+            <input style="background-color: #f71560; color: white;
+     border: transparent solid 3px;
+     margin-bottom: 40px;" type="button" value="LOGIN">
+  <Label style="margin-right: 40px; color: #908888;">Remember me</Label>
+  <label style="color: rgb(82, 82, 140);"><i> Forgot your password?</i></label>
+        </form>
+    </div>
+       <div class="font-end">Made width By -Blqees Ahmed </div>
+</body>
+</html>
+
